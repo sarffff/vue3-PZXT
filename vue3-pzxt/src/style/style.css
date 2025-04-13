@@ -1,0 +1,17 @@
+/* 清除所有元素默认边距 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* 推荐同时设置盒子模型 */
+  }
+  
+  /* 可选：清除列表样式 */
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* 可选：清除链接默认样式 */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }

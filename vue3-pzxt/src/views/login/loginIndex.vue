@@ -103,7 +103,7 @@ const userHandle = async () => {
                 if (menuData.data && menuData.data.code === 10000) {
                     userStore.setPermissions(menuData.data.data);
                     toRaw(userStore.routerList).forEach(item => {
-                        router.addRoute('main',item);
+                        router.addRoute('main', item);
                     });
 
                     console.log("当前路由列表:", router.getRoutes()); // ✅ 确保路由已注册
@@ -169,11 +169,12 @@ onBeforeUnmount(() => {
             </el-form>
             <el-button v-if="!formType" type="primary" @click="userHandle">登录</el-button>
             <el-button v-else type="primary" @click="userHandle">注册账号</el-button>
+            <h1>App</h1>
         </el-card>
     </el-row>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 :deep(.el-card__header) {
     padding: 0;
 }
